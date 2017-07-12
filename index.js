@@ -4,7 +4,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 const TelegramBot = require('telegram-bot-oop-way');
 const token = '' + process.argv[2]
-const pollTimeout = 1000 * 30;
+const pollTimeout = 1000 * 60 * 3;
 class GoEatBot extends TelegramBot {
 
     constructor(token) {
