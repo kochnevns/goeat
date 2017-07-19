@@ -32,7 +32,7 @@ class GoEatBot extends TelegramBot {
     }
     plus(msg) {
       let [name, chatID] = [this.getUserName(msg), msg.chat.id];
-        this.people.push(name);
+        this.people[chatID].push(name);
 
       //this.answerCallbackQuery(msg.id, 'ты в деле');
 
